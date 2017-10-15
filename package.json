@@ -1,0 +1,44 @@
+{
+  "name": "isomorphic-react-boilerplate",
+  "version": "0.1.0",
+  "description": "Isomorphic react app with db",
+  "main": "index.js",
+  "author": "ChugunovRoman <Zebs-BMK@yandex.ru>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --experimental-modules server.js",
+    "build": "webpack",
+    "build:watch": "webpack --watch"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "router",
+    "isomorphic",
+    "universal",
+    "express",
+    "sequelize",
+    "database"
+  ],
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.2.3",
+    "babel": "^6.23.0",
+    "babel-loader": "^7.1.2",
+    "css-loader": "^0.28.7",
+    "happypack": "^4.0.0",
+    "sass": "^1.0.0-beta.2",
+    "sass-loader": "^6.0.6",
+    "ts-loader": "^2.3.7",
+    "typescript": "^2.5.3",
+    "webpack": "^3.7.1"
+  },
+  "dependencies": {
+    "@types/react": "^16.0.10",
+    "@types/react-dom": "^16.0.1",
+    "express": "^4.16.2",
+    "nodemon": "^1.12.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "yaml-env-config": "^1.1.0"
+  }
+}
