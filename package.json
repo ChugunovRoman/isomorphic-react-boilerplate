@@ -6,7 +6,7 @@
   "author": "ChugunovRoman <Zebs-BMK@yandex.ru>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon --experimental-modules server.js",
+    "start": "nodemon --experimental-modules index.js",
     "build": "webpack",
     "build:watch": "webpack --watch"
   },
@@ -28,6 +28,7 @@
     "happypack": "^4.0.0",
     "sass": "^1.0.0-beta.2",
     "sass-loader": "^6.0.6",
+    "source-map-loader": "^0.2.2",
     "ts-loader": "^2.3.7",
     "typescript": "^2.5.3",
     "webpack": "^3.7.1"
@@ -35,6 +36,7 @@
   "dependencies": {
     "@types/react": "^16.0.10",
     "@types/react-dom": "^16.0.1",
+    "bluebird": "^3.5.1",
     "express": "^4.16.2",
     "nodemon": "^1.12.1",
     "react": "^16.0.0",
