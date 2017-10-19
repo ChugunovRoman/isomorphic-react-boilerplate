@@ -3,12 +3,14 @@
         "outDir": "./public/js",
         "noImplicitAny": true,
         "sourceMap": true,
-        "module": "ES6",
-        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "target": "es6",
         "jsx": "react",
         "allowJs": true
     },
     "include":[
-        "./src/**/*"
+        "./src/client.tsx",
+        "./src/components/html.tsx"
     ]
 }

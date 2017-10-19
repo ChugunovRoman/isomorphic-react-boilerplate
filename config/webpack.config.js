@@ -16,7 +16,9 @@ const regularExpressions = {
 const config = {
     context: `${rootFolder}/src`,
     entry: {
-        client: path.join(rootFolder, '/src/client.js')
+        client: path.join(rootFolder, '/src/client.tsx'),
+        './../../src/server/html': path.join(rootFolder, '/src/components/html.tsx')
+
     },
     output: {
         // filesystem path for static files
@@ -127,13 +129,13 @@ const config = {
     },
 
     resolve: {
-        extensions: ['.ts', '.tsx', '.sass', '.css'],
+        extensions: ['.ts', '.tsx', '.js', '.sass', '.css'],
 
         modules: [
             path.resolve('node_modules')
         ],
         alias: {
-            components: path.resolve(__dirname, '../src/components')
+            components: path.resolve(__dirname, './../src/components')
         }
     },
 

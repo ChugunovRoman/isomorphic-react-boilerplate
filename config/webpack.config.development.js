@@ -6,12 +6,9 @@ const { regularExpressions, config } = require('./webpack.config');
 
 const appConfig = require('./');
 
-console.log('appConfig: ', appConfig);
+config.devtool = 'source-map';
 
-config.devtool = 'inline-source-map';
-
-const jsLoader = config.module.rules.find(loader => loader.test.toString() === regularExpressions.javascript.toString());
-console.log('jsLoader: ', jsLoader);
+const jsLoader = config.module.rules.find(loader => loader.test.toString() === regularExpressions.typescript.toString());
 
 // jsLoader.use[0].options = {
 //     presets: [
@@ -68,4 +65,4 @@ config.plugins.push(
 // // network path for static files: fetch all statics from webpack development server
 // config.output.publicPath = `http://${devServerHost}:${devServerPort}${config.output.publicPath}`;
 
-export default config;
+module.exports = config;
