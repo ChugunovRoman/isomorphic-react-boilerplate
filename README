@@ -1,1 +1,11 @@
 # isomorphic React App
+
+I making my Isomorphic React Boilerplate with uses those technology:
+ - React
+ - Redux
+ - express
+ - TypeScript (Client and server)
+ - sequelize
+ - styled-components
+
+*In master branch nothing contain. As yet.*
